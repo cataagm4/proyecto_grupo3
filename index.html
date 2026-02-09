@@ -1,13 +1,45 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Proyecto de Grupo</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.3">
+  <style type="text/css">
+    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+.dark-theme {
+  background-color: #1a1a1a !important;
+  color: white !important;
+}
+
+.dark-theme p, .dark-theme h1, .dark-theme span {
+  color: white !important;
+  -webkit-text-stroke: 0px !important; 
+}
+  </style>
+  
 </head>
 <body>
-<h1>Bienvenidos al Proyecto de Grupo</h1>
-<p>Esta es una página de ejemplo para el laboratorio de Git.</p>
-<p>Colaborador: [Nombre]</p>
+  <h1 style="..."><b>Bienvenidos al Proyecto de Grupo</b></h1>
+  <p class="p2">Esta es una página de ejemplo para el laboratorio de Git.</p>
+  <p class="p2">Colaborador: Catalina Gómez</p> <button id="dark-mode-toggle" style="padding: 10px; cursor: pointer;">
+    Cambiar Modo
+  </button>
+
+  <script>
+    const btn = document.getElementById('dark-mode-toggle');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+      if (document.body.classList.contains('dark-theme')) {
+        btn.textContent = "Modo Claro";
+      } else {
+        btn.textContent = "Modo Oscuro";
+      }
+    });
+  </script>
 </body>
 </html>
+
