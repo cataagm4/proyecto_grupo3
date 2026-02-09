@@ -3,29 +3,65 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
+  <title>Proyecto Grupo 3</title>
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2685.3">
   <style type="text/css">
     p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
     p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
     span.s1 {font-kerning: none}
-.dark-theme {
-  background-color: #1a1a1a !important;
-  color: white !important;
-}
 
-.dark-theme p, .dark-theme h1, .dark-theme span {
-  color: white !important;
-  -webkit-text-stroke: 0px !important; 
-}
+    /* --- ESTILOS MODO OSCURO --- */
+    .dark-theme {
+      background-color: #1a1a1a !important;
+      color: white !important;
+    }
+
+    .dark-theme p, .dark-theme h1, .dark-theme span {
+      color: white !important;
+      -webkit-text-stroke: 0px !important; 
+    }
+
+    /* --- NUEVA ANIMACIÓN --- */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animacion-entrada {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    /* Retrasos para que aparezcan uno tras otro */
+    .retraso-1 { animation-delay: 0.3s; }
+    .retraso-2 { animation-delay: 0.6s; }
+
   </style>
-  
 </head>
 <body>
-  <h1 style="..."><b>Bienvenidos al Proyecto de Grupo</b></h1>
-  <p class="p2">Esta es una página de ejemplo para el laboratorio de Git.</p>
-  <p class="p2">Colaborador: Catalina Gómez</p> <button id="dark-mode-toggle" style="padding: 10px; cursor: pointer;">
+  <h1 class="animacion-entrada" style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; -webkit-text-stroke: #000000">
+    <span class="s1"><b>Bienvenidos al Proyecto de Grupo</b></span>
+  </h1>
+
+  <p class="p2 animacion-entrada retraso-1">
+    <span class="s1">Esta es una página de ejemplo para el laboratorio de Git.</span>
+  </p>
+
+  <p class="p2 animacion-entrada retraso-2">
+    <span class="s1">Colaborador: Catalina Gómez</span>
+  </p> 
+
+  <p class="p2 animacion-entrada retraso-3">
+    <span class="s1">Colaborador: Samuel Rodríguez</span>
+  </p> 
+
+  <button id="dark-mode-toggle" class="animacion-entrada retraso-2" style="padding: 10px; cursor: pointer;">
     Cambiar Modo
   </button>
 
@@ -42,4 +78,3 @@
   </script>
 </body>
 </html>
-
