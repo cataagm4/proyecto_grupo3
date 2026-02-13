@@ -1,14 +1,14 @@
-﻿\# Proyecto Grupo 3
+﻿# Proyecto Grupo 3
 
 
 
-\## Descripción
+## Descripción
 
 En este primer laboratorio, empezamos a aplicar conceptos basicos de git en un repositorio	 en grupo. Utilizamos clonación del repositiorio requests de pull , commits y demás comandos basicos. Adicionalmente se realizó también un informe.
 
 
 
-\## Comandos utilizados y su propósito
+## Comandos utilizados y su propósito
 
 
 
@@ -42,7 +42,7 @@ En este primer laboratorio, empezamos a aplicar conceptos basicos de git en un r
 
 
 
-\## Enlace al repositorio
+## Enlace al repositorio
 
-\[https://github.com/cataagm4/proyecto\_grupo3.git](https://github.com/cataagm4/proyecto\_grupo3.git)
+[https://github.com/cataagm4/proyecto\_grupo3.git](https://github.com/cataagm4/proyecto_grupo3.git)
 
