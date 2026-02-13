@@ -1,184 +1,169 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+"http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title>Proyecto Grupo 3</title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Proyecto Grupo 3</title>
 
-    .dark-theme {
-      background-color: #1a1a1a !important;
-      color: white !important;
-    }
+<style type="text/css">
+p.p2 {margin: 0 0 12px 0; font:12px Times; -webkit-text-stroke:#000}
+span.s1 {font-kerning:none}
 
-    .dark-theme p, .dark-theme h1, .dark-theme span {
-      color: white !important;
-      -webkit-text-stroke: 0px !important; 
-    }
+.dark-theme {
+  background:#1a1a1a !important;
+  color:white !important;
+}
 
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+.dark-theme p, .dark-theme h1, .dark-theme span {
+  color:white !important;
+  -webkit-text-stroke:0 !important;
+}
 
-    .animacion-entrada {
-      animation: fadeInUp 1s ease-out forwards;
-    }
+@keyframes fadeInUp{
+  from{opacity:0; transform:translateY(30px);}
+  to{opacity:1; transform:translateY(0);}
+}
 
-    .retraso-1 { animation-delay: 0.3s; }
-    .retraso-2 { animation-delay: 0.6s; }
+.animacion-entrada{animation:fadeInUp 1s ease-out forwards;}
+.retraso-1{animation-delay:.3s;}
+.retraso-2{animation-delay:.6s;}
+.retraso-3{animation-delay:.9s;}
 
-    .caja {
-      width: 120px;
-      height: 120px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 10px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      background: #4ecdc4;
-      color: white;
-      margin: 10px 0 5px 0;
-    }
+.caja{
+  width:120px;height:120px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:10px;font-weight:bold;
+  cursor:pointer;transition:.3s;
+  background:#4ecdc4;color:white;
+  margin:10px 0 5px 0;
+}
 
-    .acordeon {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease-out, opacity 0.3s ease;
-      opacity: 0;
-      margin-bottom: 20px;
-    }
+.acordeon{
+  max-height:0;overflow:hidden;
+  transition:max-height .4s, opacity .3s;
+  opacity:0;margin-bottom:20px;
+}
 
-    .acordeon.activo {
-      max-height: 100px;
-      opacity: 1;
-    }
+.acordeon.activo{max-height:100px;opacity:1;}
 
-    .info-colaborador {
-      padding: 15px;
-      border-left: 4px solid #4ecdc4;
-      font-style: italic;
-      color: #555;
-      background: rgba(78, 205, 196, 0.05);
-      border-radius: 0 10px 10px 0;
-    }
+.info-colaborador{
+  padding:15px;
+  border-left:4px solid #4ecdc4;
+  font-style:italic;
+  color:#555;
+  background:rgba(78,205,196,.05);
+  border-radius:0 10px 10px 0;
+}
 
-    .dark-theme .info-colaborador {
-      color: #ddd;
-      border-left-color: #4ecdc4;
-      background: rgba(78, 205, 196, 0.1);
-    }
+.dark-theme .info-colaborador{
+  color:#ddd;
+  background:rgba(78,205,196,.1);
+}
 
-    button {
-      padding: 10px 20px;
-      cursor: pointer;
-      margin: 20px 0;
-      background: #333;
-      color: white;
-      border: none;
-      border-radius: 5px;
-    }
+button{
+  padding:10px 20px;
+  cursor:pointer;
+  margin:20px 0;
+  background:#333;
+  color:white;
+  border:none;
+  border-radius:5px;
+}
 
-    .dark-theme button {
-      background: white;
-      color: #333;
-    }
-
-    .colaborador {
-      margin-bottom: 5px;
-    }
-  </style>
+.dark-theme button{
+  background:white;
+  color:#333;
+}
+</style>
 </head>
+
 <body>
-  <h1 class="animacion-entrada" style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; -webkit-text-stroke: #000000">
-    <span class="s1"><b>Bienvenidos al Proyecto de Grupo</b></span>
-  </h1>
 
-  <p class="p2 animacion-entrada retraso-1">
-    <span class="s1">Esta es una página de ejemplo para el laboratorio de Git.</span>
-  </p>
+<h1 class="animacion-entrada">
+<b>Bienvenidos al Proyecto de Grupo</b>
+</h1>
 
-  <!-- JHONATAN ROBAYO -->
-  <p class="p2 animacion-entrada retraso-2 colaborador">
-    <span class="s1"><strong>Colaborador: Jhonatan Robayo</strong></span>
-  </p>
-  <div id="caja1" class="caja animacion-entrada retraso-2" onclick="toggleAcordeon('caja1', 'acordeon1')">
-    JHONATAN
-  </div>
-  <div id="acordeon1" class="acordeon">
-    <div class="info-colaborador">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </div>
-  </div>
+<p class="p2 animacion-entrada retraso-1">
+Esta es una página de ejemplo para el laboratorio de Git.
+</p>
 
-  <!-- CATALINA GÓMEZ -->
-  <p class="p2 animacion-entrada retraso-2 colaborador">
-    <span class="s1"><strong>Colaborador: Catalina Gómez</strong></span>
-  </p>
-  <div id="caja2" class="caja animacion-entrada retraso-2" onclick="toggleAcordeon('caja2', 'acordeon2')">
-    CATALINA
-  </div>
-  <div id="acordeon2" class="acordeon">
-    <div class="info-colaborador">
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </div>
-  </div>
+<!-- JHONATAN -->
+<p class="p2 animacion-entrada retraso-2"><strong>Colaborador: Jhonatan Robayo</strong></p>
+<div id="caja1" class="caja" onclick="toggleAcordeon('caja1','acordeon1')">JHONATAN</div>
+<div id="acordeon1" class="acordeon">
+<div class="info-colaborador">
+Lorem ipsum dolor sit amet.
+</div>
+</div>
 
-  <!-- SAMUEL RODRÍGUEZ -->
-  <p class="p2 animacion-entrada retraso-2 colaborador">
-    <span class="s1"><strong>Colaborador: Samuel Rodríguez</strong></span>
-  </p>
-  <div id="caja3" class="caja animacion-entrada retraso-2" onclick="toggleAcordeon('caja3', 'acordeon3')">
-    SAMUEL
-  </div>
-  <div id="acordeon3" class="acordeon">
-    <div class="info-colaborador">
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    </div>
-  </div>
+<!-- CATALINA -->
+<p class="p2 animacion-entrada retraso-2"><strong>Colaborador: Catalina Gómez</strong></p>
+<div id="caja2" class="caja" onclick="toggleAcordeon('caja2','acordeon2')">CATALINA</div>
+<div id="acordeon2" class="acordeon">
+<div class="info-colaborador">
+Ut enim ad minim veniam.
+</div>
+</div>
 
-  <button id="dark-mode-toggle" class="animacion-entrada retraso-2">
-    Modo Oscuro
-  </button>
+<!-- SAMUEL -->
+<p class="p2 animacion-entrada retraso-2"><strong>Colaborador: Samuel Rodríguez</strong></p>
+<div id="caja3" class="caja" onclick="toggleAcordeon('caja3','acordeon3')">SAMUEL</div>
+<div id="acordeon3" class="acordeon">
+<div class="info-colaborador">
+Duis aute irure dolor.
+</div>
+</div>
 
-  <script>
-    function toggleAcordeon(idCaja, idAcordeon) {
-      const caja = document.getElementById(idCaja);
-      const acordeon = document.getElementById(idAcordeon);
-      
-      // Cambiar color de la caja
-      const colores = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFCC5C', '#9B59B6', '#3498DB', '#E67E22', '#E74C3C', '#1ABC9C'];
-      const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
-      caja.style.backgroundColor = colorAleatorio;
-      
-      // Cambiar tamaño de la caja (efecto de clic)
-      caja.style.transform = 'scale(0.95)';
-      setTimeout(() => { caja.style.transform = 'scale(1)'; }, 200);
-      
-      // Cerrar todos los acordeones
-      const acordeones = document.querySelectorAll('.acordeon');
-      acordeones.forEach(a => {
-        if (a.id !== idAcordeon) {
-          a.classList.remove('activo');
-        }
-      });
-      
-      // Abrir/cerrar el acordeon seleccionado
-      acordeon.classList.toggle('activo');
-    }
+<!-- NUEVO COLABORADOR -->
+<p class="p2 animacion-entrada retraso-3">
+Colaborador: Santiago Correa
+</p>
 
-    // Modo oscuro/claro
-    const btn = document.getElementById('dark-mode-toggle');
-    btn.addEventListener('click', () => {
-      document.body.classList.toggle('dark-theme');
-      btn.textContent = document.body.classList.contains('dark-theme') ? 'Modo Claro' : 'Modo Oscuro';
-    });
-  </script>
+<button id="dark-mode-toggle">Modo Oscuro</button>
+<button id="img-btn">Mostrar Imagen</button>
+
+<div id="contenedor-imagen"></div>
+
+<script>
+function toggleAcordeon(idCaja,idAcordeon){
+  const caja=document.getElementById(idCaja);
+  const acordeon=document.getElementById(idAcordeon);
+
+  const colores=['#FF6B6B','#4ECDC4','#45B7D1','#FFCC5C','#9B59B6','#3498DB','#E67E22','#E74C3C','#1ABC9C'];
+  caja.style.backgroundColor=colores[Math.floor(Math.random()*colores.length)];
+
+  caja.style.transform='scale(.95)';
+  setTimeout(()=>caja.style.transform='scale(1)',200);
+
+  document.querySelectorAll('.acordeon').forEach(a=>{
+    if(a.id!==idAcordeon) a.classList.remove('activo');
+  });
+
+  acordeon.classList.toggle('activo');
+}
+
+const btn=document.getElementById('dark-mode-toggle');
+btn.addEventListener('click',()=>{
+  document.body.classList.toggle('dark-theme');
+  btn.textContent=document.body.classList.contains('dark-theme')
+    ? 'Modo Claro'
+    : 'Modo Oscuro';
+});
+
+const imgBtn=document.getElementById('img-btn');
+imgBtn.addEventListener('click',()=>{
+  const cont=document.getElementById('contenedor-imagen');
+  if(!cont.querySelector('img')){
+    const img=document.createElement('img');
+    img.src="https://preview.redd.it/the-origin-of-dog-closing-eyes-meme-yakuza-3-v0-txfwdc8oi2ve1.jpg?width=567&format=pjpg&auto=webp&s=0b51ed14c2acfbeed5e54329f158187a8e881e32";
+    img.style.maxWidth="400px";
+    img.style.display="block";
+    img.style.marginTop="10px";
+    cont.appendChild(img);
+  }
+});
+</script>
+
 </body>
 </html>
